@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+
+        <ui:insert name="titlehead"/>
+        <link rel="icon" href="${facesContext.externalContext.requestContextPath}/assets/images/favicon.gif" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/assets/css/bootstrap.min.css"/>
+        <link rel="shortcut icon" href="${facesContext.externalContext.requestContextPath}/assets/images/favicon.gif" type="image/x-icon"/> 
+        <link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/assets/css/styles.css"/>
+    </h:head>
+    <h:body>
+
+        <div class="container ">
+            <header>
+                <ui:include src="header.xhtml"/>
+            </header>
+
+            <ui:insert name="formulaire"/>
+            <footer>
+                <ui:include src="footer.xhtml"/>
+            </footer>
+
+        </div>
+
+    </h:body>
+</html>
+

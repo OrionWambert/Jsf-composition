@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <ui:insert name="headtitle" />
+        <link rel="icon" href="${facesContext.externalContext.requestContextPath}/assets/images/favicon.gif" type="image/x-icon"/>
+
+        <link rel="shortcut icon" href="${facesContext.externalContext.requestContextPath}/assets/images/favicon.gif" type="image/x-icon"/> 
+        <link rel="stylesheet" type="text/css" href="${facesContext.externalContext.requestContextPath}/assets/css/styles.css"/>
+        <script src="${facesContext.externalContext.requestContextPath}/assets/js/slides.min.jquery.js"></script>
+        <ui:insert name="scriptjs" />
+    </h:head>
+    <h:body>
+
+        <div class="container">
+
+
+            <ui:include src="/xhtml/header.xhtml" />
+
+            <ui:insert name="slide" />
+
+
+
+
+            <ui:insert name="content" />
+
+            <ui:include src="/xhtml/footer.xhtml" />
+
+        </div>
+
+
+
+
+
+    </h:body>
+</html>
+
